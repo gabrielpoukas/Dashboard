@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard Financeiro</title>
+</head>
+<body>
+    <header>
+
+        <h1>💰 MyFinance Dashboard</h1>
+
+    </header>
+
+    <main class="container">
+
+        <section id="balance">
+
+            <div class="card">
+                    <h3>Entradas</h3>
+                    <p id="incomeDisplay">R$ 0,00</p>
+
+            </div>
+
+            <div class="card">
+                <h3>Saidas</h3>
+
+                 <p id="expenseDisplay">R$ 0,00</p>
+            </div>
+
+            <div class="card total">
+
+                <h3>Total</h3>
+                <p id="totalDisplay"> R$0,00</p>
+            </div>
+
+        </section>
+
+        <section id="transaction">
+
+            <form id="form">
+
+                <input type="text" id="description" placeholder="Descrição">
+                <input type="number" id="amount" placeholder="0,00" step="0.01">
+                <select id="type">
+
+                    <option value="income">Entrada</option>
+                    <option value="expense">Saida</option>
+                </select>
+            </form>
+
+        </section>
+
+        <section id="data-table">
+
+            <table id="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Ação</th>
+
+                    </tr>
+                </thead>
+             <tbody id="tbody">
+            </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>Desenvolvido com 🚀 por 
+            <a href="https://www.linkedin.com/in/gabriel-alexandre-marques-cardoso-0041101ab/" target="_blank" rel="noopener noreferrer">
+                Gabriel Cardoso
+            </a>
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
