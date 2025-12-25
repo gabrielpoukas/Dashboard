@@ -26,17 +26,18 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
 }
 
 header {
     background: var(--bg-header);
-    padding: 5rem 0 10rem; 
+    padding: 3.0rem 0 10rem; 
     text-align: center;
     border-bottom: 1px solid var(--glass-border);
 }
 
 header h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 800;
     letter-spacing: -1.5px;
     background: linear-gradient(to right, #ffffff, #94a3b8);
@@ -110,6 +111,7 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr auto;
     gap: 1rem;
+    align-items: center;
     
 }
 
@@ -140,7 +142,38 @@ button[type="submit"]:hover {
     filter: brightness(1.2);
 }
 
-/* 7. TABELA */
+.btn-clear {
+    grid-column: 1 / -1; 
+    justify-self: center;
+    margin-top: 1rem; 
+    background: transparent;
+    border: 1px solid var(--red);
+    color: var(--red);
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    
+}
+
+.btn-clear:hover {
+    background: var(--red);
+    color: white;
+}
+
+button[type="submit"] {
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
 table {
     width: 100%;
     border-spacing: 0 0.5rem;
